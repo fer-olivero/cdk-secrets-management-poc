@@ -8,5 +8,5 @@ aws kms encrypt --key-id alias/SecretCredentials --plaintext fileb://<(echo "{\"
 
 ## Decrypt with KMS Key
 ```bash
-aws kms decrypt --ciphertext-blob fileb://<(cat encrypted.asc | base64 -D) --key-id alias/email-rendering-fer --output text --query Plaintext | base64 -D > decrypted.txt
+aws kms decrypt --ciphertext-blob fileb://<(cat encrypted.asc | base64 -D) --key-id alias/SecretCredentials --output text --query Plaintext | base64 -D > decrypted.txt
 ```
