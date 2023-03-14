@@ -1,5 +1,5 @@
-import assert from "node:assert";
-import { TextDecoder, TextEncoder } from "node:util";
+import assert from "node:assert/strict";
+import { TextDecoder } from "node:util";
 
 import { DecryptCommand, KMSClient } from "@aws-sdk/client-kms";
 import type { APIGatewayProxyHandlerV2 } from "aws-lambda";

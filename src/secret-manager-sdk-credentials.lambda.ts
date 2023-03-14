@@ -1,4 +1,4 @@
-import assert from "assert";
+import assert from "node:assert/strict";
 
 import { GetSecretValueCommand, SecretsManagerClient } from "@aws-sdk/client-secrets-manager";
 import type { APIGatewayProxyHandlerV2 } from "aws-lambda";
