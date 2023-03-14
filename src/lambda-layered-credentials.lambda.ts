@@ -5,7 +5,7 @@ const CREDENTIALS_SECRET_ID = "CredentialsSecret";
 export const handler: APIGatewayProxyHandlerV2 = async () => {
   const response = await fetch(`http://localhost:2773/secretsmanager/get?secretId=${CREDENTIALS_SECRET_ID}`, {
     headers: {
-      "X-Aws-Parameters-Secrets-Token": process.env.AWS_SESSION_TOKEN!,
+      "X-Aws-Parameters-Secrets-Token": process.env['AWS_SESSION_TOKEN']!,
     },
   });
   if (!response.ok) {

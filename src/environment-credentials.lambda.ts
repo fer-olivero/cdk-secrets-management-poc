@@ -16,10 +16,10 @@ const credentialsResponse = await kmsClient.send(
   })
 );
 
-const credentials = new TextDecoder().decode(credentialsResponse.Plaintext);
+const credentials = JSON.parse(new TextDecoder().decode(credentialsResponse.Plaintext));
 
 export const handler: APIGatewayProxyHandlerV2 = () => {
   return Promise.resolve({
-    body: credentials,
+    body: JSON.stringify(credentials),
   });
 };

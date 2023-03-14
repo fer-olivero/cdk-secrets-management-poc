@@ -7,12 +7,12 @@ import { IKey, Key } from 'aws-cdk-lib/aws-kms';
 import { FunctionUrlAuthType, LambdaInsightsVersion, LayerVersion, Runtime, Tracing } from 'aws-cdk-lib/aws-lambda';
 import { Charset, NodejsFunction, OutputFormat } from 'aws-cdk-lib/aws-lambda-nodejs';
 import { RetentionDays } from 'aws-cdk-lib/aws-logs';
-import { Construct } from 'constructs';
-import { ISecret, Secret } from 'aws-cdk-lib/aws-secretsmanager';
+import type { Construct } from 'constructs';
+import { Secret } from 'aws-cdk-lib/aws-secretsmanager';
 
 class CdkSecretsManagementPOCStack extends Stack {
     secretKmsKey: IKey
-    secret: ISecret
+    secret: Secret
     constructor(scope: Construct, id: string, props: StackProps) {
         super(scope, id, props);
         this.secretKmsKey = new Key(this, "kmsEncryptKey", {
@@ -52,8 +52,6 @@ class CdkSecretsManagementPOCStack extends Stack {
                 charset: Charset.UTF8,
                 // required for top-level await
                 format: OutputFormat.ESM,
-                // dirty hack to get ESM up and running: https://github.com/evanw/esbuild/issues/1921#issuecomment-1152887672
-                banner: "import { createRequire } from 'module';const require = createRequire(import.meta.url);",
             },
         });
 
@@ -90,8 +88,6 @@ class CdkSecretsManagementPOCStack extends Stack {
                 charset: Charset.UTF8,
                 // required for top-level await
                 format: OutputFormat.ESM,
-                // dirty hack to get ESM up and running: https://github.com/evanw/esbuild/issues/1921#issuecomment-1152887672
-                banner: "import { createRequire } from 'module';const require = createRequire(import.meta.url);",
             },
         });
 
@@ -124,8 +120,6 @@ class CdkSecretsManagementPOCStack extends Stack {
                 charset: Charset.UTF8,
                 // required for top-level await
                 format: OutputFormat.ESM,
-                // dirty hack to get ESM up and running: https://github.com/evanw/esbuild/issues/1921#issuecomment-1152887672
-                banner: "import { createRequire } from 'module';const require = createRequire(import.meta.url);",
             },
         });
 
