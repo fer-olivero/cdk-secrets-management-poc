@@ -10,7 +10,7 @@ specifiers:
   aws-cdk-lib: 2.68.0
   constructs: ^10.0.0
   esbuild: ^0.17.11
-  tsx: ^3.12.5
+  tsx: ^3.12.7
   typescript: ~4.9.5
   undici: ^5.21.0
 
@@ -26,7 +26,7 @@ devDependencies:
   '@types/node': 18.14.6
   aws-cdk: 2.68.0
   esbuild: 0.17.11
-  tsx: 3.12.5
+  tsx: 3.12.7
   typescript: 4.9.5
   undici: 5.21.0
 
@@ -1256,8 +1256,8 @@ packages:
     resolution: {integrity: sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg==}
     dev: false
 
-  /tsx/3.12.5:
-    resolution: {integrity: sha512-/TLj30xF1zcN9JkoFCyROtIQUi8cRQG+AFchsg5YkWou3+RXxTZS/ffWB3nCxyZPoBqF2+8ohs07N815dNb1wQ==}
+  /tsx/3.12.7:
+    resolution: {integrity: sha512-C2Ip+jPmqKd1GWVQDvz/Eyc6QJbGfE7NrR3fx5BpEHMZsEHoIxHL1j+lKdGobr8ovEyqeNkPLSKp6SCSOt7gmw==}
     hasBin: true
     dependencies:
       '@esbuild-kit/cjs-loader': 2.4.2
