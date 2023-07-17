@@ -5,7 +5,7 @@ specifiers:
   '@aws-sdk/client-secrets-manager': ^3.290.0
   '@tsconfig/node18-strictest-esm': ^1.0.1
   '@types/aws-lambda': ^8.10.111
-  '@types/node': 18.14.6
+  '@types/node': 20.4.2
   aws-cdk: 2.68.0
   aws-cdk-lib: 2.68.0
   constructs: ^10.0.0
@@ -23,7 +23,7 @@ dependencies:
 devDependencies:
   '@tsconfig/node18-strictest-esm': 1.0.1
   '@types/aws-lambda': 8.10.111
-  '@types/node': 18.14.6
+  '@types/node': 20.4.2
   aws-cdk: 2.68.0
   esbuild: 0.17.11
   tsx: 3.12.5
@@ -1033,8 +1033,8 @@ packages:
     resolution: {integrity: sha512-8HR9UjIKmoemEzE2BviVtFkeenxfbizSu8raFjnT2VXxguZZ2JTlNww7INOH7IA0J/zRa3TjOftkYq6hVNkxDA==}
     dev: true
 
-  /@types/node/18.14.6:
-    resolution: {integrity: sha512-93+VvleD3mXwlLI/xASjw0FzKcwzl3OdTCzm1LaRfqgS21gfFtK3zDXM5Op9TeeMsJVOaJ2VRDpT9q4Y3d0AvA==}
+  /@types/node/20.4.2:
+    resolution: {integrity: sha512-Dd0BYtWgnWJKwO1jkmTrzofjK2QXXcai0dmtzvIBhcA+RsG5h8R3xlyta0kGOZRNfL9GuRtb1knmPEhQrePCEw==}
     dev: true
 
   /at-least-node/1.0.0:
