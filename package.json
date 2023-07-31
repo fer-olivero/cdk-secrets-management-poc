@@ -84,7 +84,7 @@
     "@aws-sdk/client-s3": "^3.357.0",
     "@aws-sdk/client-sqs": "^3.357.0",
     "@aws-sdk/credential-providers": "^3.357.0",
-    "aws-cdk-lib": "2.85.0",
+    "aws-cdk-lib": "2.89.0",
     "constructs": "^10.2.55",
     "html-to-text": "^9.0.5",
     "i18next": "^22.5.1",
